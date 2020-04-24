@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
+        app:abc_leftIconPadding="10dp"
         app:abc_leftIconRes="@mipmap/icon_return"
         app:abc_titleText="TextInputLayout"
         app:abc_titleTextColor="#ffffff" />
@@ -34,6 +35,7 @@
         app:counterOverflowTextColor="@color/colorAccent"
         app:counterTextColor="@color/colorPrimary"
         app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
         app:hintTextColor="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText

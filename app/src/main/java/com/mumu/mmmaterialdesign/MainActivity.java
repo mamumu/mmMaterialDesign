@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.mumu.mmmaterialdesign.md.SnackBarActivity;
 import com.mumu.mmmaterialdesign.md.TextInputLayoutActivity;
 
 import butterknife.BindView;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, TextInputLayoutActivity.class));
                 break;
             case R.id.btn2:
+                startActivity(new Intent(MainActivity.this, SnackBarActivity.class));
                 break;
             case R.id.btn3:
                 break;
