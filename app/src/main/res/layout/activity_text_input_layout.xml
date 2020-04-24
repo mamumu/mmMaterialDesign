@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <per.goweii.actionbarex.common.ActionBarCommon
+        android:id="@+id/abc_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:abc_leftIconRes="@mipmap/icon_return"
+        app:abc_titleText="TextInputLayout"
+        app:abc_titleTextColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="30dp"
+        android:background="@mipmap/ic_launcher_round" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:hint="请输入您的账号"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:counterOverflowTextColor="@color/colorAccent"
+        app:counterTextColor="@color/colorPrimary"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon1"
+            android:shadowColor="@color/colorPrimary"
+            android:theme="@style/mmTextInputEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:hint="请输入密码"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:counterOverflowTextColor="@color/colorAccent"
+        app:counterTextColor="@color/colorPrimary"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/colorPrimary"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon1"
+            android:inputType="numberPassword"
+            android:theme="@style/mmTextInputEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
