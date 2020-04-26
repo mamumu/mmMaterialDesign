@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.mumu.mmmaterialdesign.md.CardViewActivity;
 import com.mumu.mmmaterialdesign.md.FloatingActionButtonActivity;
 import com.mumu.mmmaterialdesign.md.SnackBarActivity;
 import com.mumu.mmmaterialdesign.md.SwitchCompatActivity;
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, FloatingActionButtonActivity.class));
                 break;
             case R.id.btn5:
+                startActivity(new Intent(MainActivity.this, CardViewActivity.class));
                 break;
             case R.id.btn6:
                 break;

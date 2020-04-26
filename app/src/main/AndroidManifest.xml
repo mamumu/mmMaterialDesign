@@ -28,6 +28,9 @@
 
         <activity android:name=".md.FloatingActionButtonActivity"
             android:screenOrientation="portrait"/>
+
+        <activity android:name=".md.CardViewActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
