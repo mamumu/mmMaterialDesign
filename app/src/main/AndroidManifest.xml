@@ -25,6 +25,9 @@
 
         <activity android:name=".md.SwitchCompatActivity"
             android:screenOrientation="portrait"/>
+
+        <activity android:name=".md.FloatingActionButtonActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

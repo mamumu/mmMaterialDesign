@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <per.goweii.actionbarex.common.ActionBarCommon
+        android:id="@+id/abc_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:abc_leftIconPadding="10dp"
+        app:abc_leftIconRes="@mipmap/icon_return"
+        app:abc_titleText="SwitchCompat"
+        app:abc_titleTextColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="30dp"
+        android:background="@mipmap/ic_launcher_round" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/efab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="查看详情"
+        android:textColor="#ffffff"
+        android:theme="@style/Theme.MaterialComponents"
+        app:backgroundTint="@color/colorPrimary"
+        app:icon="@mipmap/icon2"
+        app:iconTint="#ffffff"
+        app:layout_behavior="com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior"
+        app:rippleColor="@color/colorPrimaryDark" />
+
+    <!--android:src="@mipmap/icon2"  FloatingActionButton中展示的图片-->
+    <!--app:backgroundTint="@color/colorPrimary"  默认展示的背景颜色-->
+    <!--app:rippleColor="@color/colorPrimaryDark"  按下时候展示的背景颜色-->
+    <!--app:borderWidth="0dp"   边框大小，设置为0表示没有边框-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="90dp"
+        android:src="@mipmap/icon2"
+        app:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        app:rippleColor="@color/colorPrimaryDark" />
+</RelativeLayout>
