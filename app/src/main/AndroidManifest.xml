@@ -23,6 +23,8 @@
         <activity android:name=".md.SnackBarActivity"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".md.SwitchCompatActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

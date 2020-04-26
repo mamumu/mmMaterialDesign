@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <per.goweii.actionbarex.common.ActionBarCommon
+        android:id="@+id/abc_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:abc_leftIconPadding="10dp"
+        app:abc_leftIconRes="@mipmap/icon_return"
+        app:abc_titleText="SwitchCompat"
+        app:abc_titleTextColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="30dp"
+        android:background="@mipmap/ic_launcher_round" />
+
+    <!--app:showText="true" 是否显示文字 true表示显示-->
+    <!--android:textOn="on" 开关打开时候显示的文字-->
+    <!--android:textOff="off" 开关关闭时候显示的文字-->
+    <!--android:theme="@style/mmSwitchCompat" 开关的主题颜色，分为打开和关闭两种-->
+    <!--app:switchMinWidth="50dp"  开关的宽度-->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_compat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textOff="off"
+        android:textOn="on"
+        android:theme="@style/mmSwitchCompat"
+        app:showText="true"
+        app:switchMinWidth="50dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="带有选中监听的开关：" />
+
+        <!--常用的就是这种 增加一个id，加入事件监听-->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_compat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:theme="@style/mmSwitchCompat" />
+    </LinearLayout>
+</LinearLayout>

@@ -12,4 +12,11 @@
         <item name="colorControlNormal">@color/tv_6</item>
         <item name="colorControlActivated">@color/colorPrimary</item>
     </style>
+
+    <style name="mmSwitchCompat" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--开关打开时候的圆形颜色-->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <!--开关关闭时候的圆形颜色-->
+        <item name="colorControlNormal">@color/tv_9</item>
+    </style>
 </resources>

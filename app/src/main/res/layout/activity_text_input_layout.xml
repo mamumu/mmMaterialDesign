@@ -23,6 +23,7 @@
         android:layout_marginBottom="30dp"
         android:background="@mipmap/ic_launcher_round" />
 
+    <!--app:counterEnabled="true"     -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
         android:layout_width="match_parent"
@@ -34,7 +35,6 @@
         app:counterMaxLength="10"
         app:counterOverflowTextColor="@color/colorAccent"
         app:counterTextColor="@color/colorPrimary"
-        app:errorEnabled="true"
         app:hintAnimationEnabled="true"
         app:hintTextColor="@color/colorPrimary">
 
@@ -47,6 +47,14 @@
             android:theme="@style/mmTextInputEditText" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!--android:hint="请输入密码"  hint的文字内容设置-->
+    <!--app:hintTextColor="@color/colorPrimary"  输入后会跑到上面的文字颜色（上一行的hint）-->
+    <!--app:hintAnimationEnabled="true"  是否显示hint文字的上移动画-->
+    <!--app:counterEnabled="true"  是否显示右下角的输入字数的计数 true表示显示-->
+    <!--app:counterMaxLength="10"  显示在右下角的输入最大长度-->
+    <!--app:counterTextColor="@color/colorPrimary"  显示在右下角的数字默认颜色-->
+    <!--app:counterOverflowTextColor="@color/colorAccent"  显示在右下角的数字超过counterMaxLength的展示颜色-->
+    <!--app:passwordToggleEnabled="true"  是否显示右边的展示密码明文的眼睛-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til2"
         android:layout_width="match_parent"
@@ -58,10 +66,12 @@
         app:counterMaxLength="10"
         app:counterOverflowTextColor="@color/colorAccent"
         app:counterTextColor="@color/colorPrimary"
-        app:errorEnabled="true"
+        app:hintAnimationEnabled="true"
         app:hintTextColor="@color/colorPrimary"
         app:passwordToggleEnabled="true">
 
+        <!--android:drawableStart="@mipmap/icon1"  设置edittext左边的图片-->
+        <!--android:inputType="numberPassword"  设置edittext输入类型-->
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tiet2"
             android:layout_width="match_parent"
