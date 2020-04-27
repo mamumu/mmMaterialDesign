@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <per.goweii.actionbarex.common.ActionBarCommon
+        android:id="@+id/abc_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:abc_leftIconPadding="10dp"
+        app:abc_leftIconRes="@mipmap/icon_return"
+        app:abc_titleText="BottomNavigationView"
+        app:abc_titleTextColor="#ffffff" />
+
+    <!--android:background="#efefef"  背景颜色-->
+    <!--app:itemIconTint="@drawable/bottom_navigation_view"  icon的颜色，分为选中和非选中两种状态-->
+    <!--app:itemTextColor="@drawable/bottom_navigation_view"  文字的颜色，分为选中和非选中两种状态-->
+    <!--app:labelVisibilityMode="labeled"  展示状态，labeled表示icon和文字都展示-->
+    <!--app:menu="@menu/bottom_navigation_view"  配置icon和文字的menu-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#efefef"
+        app:itemIconTint="@drawable/bottom_navigation_view"
+        app:itemTextColor="@drawable/bottom_navigation_view"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_view" />
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bnv"
+        android:layout_below="@+id/abc_6" />
+</RelativeLayout>

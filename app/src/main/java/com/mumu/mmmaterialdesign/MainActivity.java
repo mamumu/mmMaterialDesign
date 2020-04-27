@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.mumu.mmmaterialdesign.md.BottomNavigationViewActivity;
 import com.mumu.mmmaterialdesign.md.CardViewActivity;
 import com.mumu.mmmaterialdesign.md.FloatingActionButtonActivity;
 import com.mumu.mmmaterialdesign.md.SnackBarActivity;
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, CardViewActivity.class));
                 break;
             case R.id.btn6:
+                startActivity(new Intent(MainActivity.this, BottomNavigationViewActivity.class));
                 break;
             case R.id.btn7:
                 break;

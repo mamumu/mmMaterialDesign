@@ -50,4 +50,6 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
     //标题栏
     implementation 'com.github.goweii:ActionBarEx:3.2.0'
+
+    implementation 'com.trello.rxlifecycle3:rxlifecycle-components:3.1.0'
 }
