@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <per.goweii.actionbarex.common.ActionBarCommon
+        android:id="@+id/abc_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:abc_leftIconPadding="10dp"
+        app:abc_leftIconRes="@mipmap/icon_return"
+        app:abc_titleText="TabLayout"
+        app:abc_titleTextColor="#ffffff" />
+
+    <!--app:tabGravity="center" 布局中心显示 -->
+    <!--app:tabIndicatorHeight="1dp" 0dp表示不显示指示器 -->
+    <!--app:tabIndicatorColor="@color/colorPrimary" 指示器颜色 -->
+    <!--app:tabMode="scrollable"  展示模式，scrollable表示铺满冰可滚动 -->
+    <!--app:tabSelectedTextColor="@color/colorPrimary"  选中文字颜色 -->
+    <!--app:tabTextColor="@color/tv_9"  非选中文字颜色 -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabIndicatorHeight="1dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="@color/tv_9" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

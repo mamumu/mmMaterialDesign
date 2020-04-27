@@ -12,6 +12,7 @@ import com.mumu.mmmaterialdesign.md.CardViewActivity;
 import com.mumu.mmmaterialdesign.md.FloatingActionButtonActivity;
 import com.mumu.mmmaterialdesign.md.SnackBarActivity;
 import com.mumu.mmmaterialdesign.md.SwitchCompatActivity;
+import com.mumu.mmmaterialdesign.md.TabLayoutActivity;
 import com.mumu.mmmaterialdesign.md.TextInputLayoutActivity;
 
 import butterknife.BindView;
@@ -72,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, BottomNavigationViewActivity.class));
                 break;
             case R.id.btn7:
+                startActivity(new Intent(MainActivity.this, TabLayoutActivity.class));
                 break;
             case R.id.btn8:
                 break;
