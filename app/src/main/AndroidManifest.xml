@@ -40,6 +40,9 @@
 
         <activity android:name=".md.DrawerLayoutActivity"
             android:screenOrientation="portrait"/>
+
+        <activity android:name=".md.NavigationViewActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

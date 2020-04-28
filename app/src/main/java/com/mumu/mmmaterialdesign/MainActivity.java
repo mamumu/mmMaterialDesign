@@ -11,6 +11,7 @@ import com.mumu.mmmaterialdesign.md.BottomNavigationViewActivity;
 import com.mumu.mmmaterialdesign.md.CardViewActivity;
 import com.mumu.mmmaterialdesign.md.DrawerLayoutActivity;
 import com.mumu.mmmaterialdesign.md.FloatingActionButtonActivity;
+import com.mumu.mmmaterialdesign.md.NavigationViewActivity;
 import com.mumu.mmmaterialdesign.md.SnackBarActivity;
 import com.mumu.mmmaterialdesign.md.SwitchCompatActivity;
 import com.mumu.mmmaterialdesign.md.TabLayoutActivity;
@@ -80,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, DrawerLayoutActivity.class));
                 break;
             case R.id.btn9:
+                startActivity(new Intent(MainActivity.this, NavigationViewActivity.class));
                 break;
             case R.id.btn10:
                 break;

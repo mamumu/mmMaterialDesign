@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item1"
+        android:icon="@mipmap/icon2"
+        android:title="菜单1" />
+
+    <item
+        android:id="@+id/menu_item2"
+        android:title="菜单2">
+        <menu>
+            <item
+                android:id="@+id/menu_item2_1"
+                android:icon="@mipmap/icon2"
+                android:title="菜单2的子菜单1" />
+            <item
+                android:id="@+id/menu_item2_2"
+                android:icon="@mipmap/icon2"
+                android:title="菜单2的子菜单2" />
+            <item
+                android:id="@+id/menu_item2_3"
+                android:icon="@mipmap/icon2"
+                android:title="菜单2的子菜单3" />
+        </menu>
+    </item>
+
+    <group android:id="@+id/group3">
+        <item
+            android:id="@+id/menu_item3"
+            android:icon="@mipmap/icon2"
+            android:title="菜单3" />
+    </group>
+
+    <group android:id="@+id/group4">
+        <item
+            android:id="@+id/menu_item4"
+            android:icon="@mipmap/icon2"
+            android:title="菜单4" />
+    </group>
+</menu>
